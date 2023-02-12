@@ -24,7 +24,6 @@ struct Book inputBooks()
 
 void displayBook(struct Book bookArr[], int arrSize)
 {
-    printf("\n\n\n");
     for (int i = 0; i < arrSize; i++)
     {
         printf("Book Name :  %s\n", bookArr[i].bookName);
@@ -41,13 +40,6 @@ int main()
     scanf("%d", &n);
 
     struct Book booksArray[n];
-
-    for (i = 0; i < n; i++)
-    {
-        booksArray[i] = inputBooks();
-    }
-
-    displayBook(booksArray, n);
 
     return 0;
 }

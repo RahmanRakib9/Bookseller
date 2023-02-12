@@ -22,16 +22,10 @@ struct Book inputBooks()
     return book;
 }
 
-void displayBook(struct Book bookArr[], int arrSize)
+void displayBook(struct Book bookArr[],int size)
+
 {
-    printf("\n\n\n");
-    for (int i = 0; i < arrSize; i++)
-    {
-        printf("Book Name :  %s\n", bookArr[i].bookName);
-        printf("Book Code :  %d\n", bookArr[i].bookCode);
-        printf("Book Price:  %.2lf\n", bookArr[i].bookPrice);
-        printf("Book Tax  :  %.2lf\n", bookArr[i].tax);
-    }
+
 }
 
 int main()
@@ -41,13 +35,6 @@ int main()
     scanf("%d", &n);
 
     struct Book booksArray[n];
-
-    for (i = 0; i < n; i++)
-    {
-        booksArray[i] = inputBooks();
-    }
-
-    displayBook(booksArray, n);
 
     return 0;
 }

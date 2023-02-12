@@ -47,7 +47,7 @@ int main()
         booksArray[i] = inputBooks();
     }
 
-    displayBook(booksArray, n);
+    displayBook(booksArray,)
 
     return 0;
 }
